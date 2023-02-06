@@ -1,0 +1,262 @@
+:root{
+    --font-famyil-arabic: 'Cairo', sans-serif;
+    --btn-color: #00579c;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+    width: auto;
+    height: auto;
+}
+
+/************************* logo and btns ********************/
+
+nav.line{
+    background-color: var(--btn-color);
+    width: auto;
+    height: 10px;
+}
+div.logo{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.logoimg{
+    background: url('../imgs/logo.jpg') no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+}
+.logoimg:hover{
+    animation: movelogo 2s ;
+}
+@keyframes movelogo
+{
+    0%{
+        width: 150px;
+        height: 150px;
+    }
+    50%{
+        width: 180px;
+        height: 180px;
+        }
+    100%{
+        width: 150px;
+        height: 150px;
+    }
+}
+.welcomeAndChose{
+    font-family: var(--font-famyil-arabic);
+    font-size: 18px;
+    text-align: center;
+}
+.choseWhat{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+div.choseWhat p {
+    font-size: 14px;
+    font-family:var(--font-famyil-arabic);
+    font-weight: bold;
+    background-color:var(--btn-color);  
+    color: white;  
+    padding: 6px 25px 6px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+div.choseWhat p:active{
+    background-color: rgba(206, 206, 206, 0.655);
+    color: #00579c;
+    border-width: 0px ; 
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+/*************************** Sign in section *********************/
+
+section.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+div.info input {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    border-width: 0px ; 
+    border: 0;
+    padding: 8px 20px 8px 20px;
+    
+}
+.input1 {
+    border-radius: 10px;
+    font-family: var(--font-famyil-arabic);
+    font-size: 14px;
+}
+.input2{
+    border-radius: 10px;
+    font-family: var(--font-famyil-arabic);
+    font-size: 14px; 
+}
+.btnloging{
+    font-family: var(--font-famyil-arabic);
+    color: rgb(255, 255, 255);
+    margin-top: 40px;
+    color: white;  
+    padding: 6px 25px 6px 25px;
+    border-radius: 5px;
+    background-color: var(--btn-color);
+    border: 0;
+    font-size: 16px;
+}
+.btnloging:active{
+    background-color: rgba(206, 206, 206, 0.655);
+    color: #00579c;
+    border-width: 0px ; 
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+/************************** sign up section ***********************/
+
+section.signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    margin-top: 10px;
+}
+.infoget{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+div.infoget input {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    border: 0;
+    padding: 8px 20px 8px 20px;
+    border-width: 0px ; 
+}
+.registerName {
+    border-radius: 10px;
+    font-family: var(--font-famyil-arabic);
+    font-size: 14px;
+}
+.password{
+    border-radius: 10px;
+    font-family: var(--font-famyil-arabic);
+    font-size: 14px;
+}
+.email{
+    border-radius: 10px;
+    font-family: var(--font-famyil-arabic);
+    font-size: 14px; 
+}
+.btnsignup{
+    font-family: var(--font-famyil-arabic);
+    color: rgb(255, 255, 255);
+    margin-top: 40px;
+    color: white;  
+    padding: 6px 25px 6px 25px;
+    border-radius: 5px;
+    background-color: var(--btn-color);
+    border: 0;
+    font-size: 16px;
+}
+.btnsignup:active{
+    background-color: rgba(206, 206, 206, 0.655);
+    color: #00579c;
+    border-width: 0px ; 
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.derrentpassword{
+    font-family: var(--font-famyil-arabic);
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: red;
+}
+.derrentpassword2{
+    font-family: var(--font-famyil-arabic);
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: red;
+}
+.passworddefre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    border-width: 2px;
+}
+.sign-inlink{
+    font-size: 15px;
+    cursor: pointer;
+    color: var(--btn-color);
+    text-decoration: none;
+    font-family: var(--font-famyil-arabic);
+}
+.sign-inlink:hover{
+    color: black;
+}
+/*************************** After signup or login ********************/
+
+
+
+
+
+
+
+
+
+
+
+
+/* .next1{
+    margin-top: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+.next2{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: green;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 250px;
+    margin-right: 250px;
+    text-align: center;
+
+} */
+footer{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p {
+    font-size: 12px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
